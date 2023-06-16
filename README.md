@@ -4,5 +4,5 @@ Examen Primer Parcial - Programacion Movil - Armando Lozano & Luis Rodriguez
 
 Integrantes:
 
-Armando Lozano Bustillo - 200960530012
-Luis Adolfo Rodriguez - 201930110148
+- Armando Lozano Bustillo - 200960530012
+- Luis Adolfo Rodriguez - 201930110148
