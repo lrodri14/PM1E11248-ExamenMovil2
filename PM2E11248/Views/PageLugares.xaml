@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="PM2E11248.Views.PageLugares">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Entry">
+            <Setter Property="TextColor" Value="#333333" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="Margin" Value="20,10,20,0" />
+        </Style>
+
+            <Style TargetType="Image">
+                <Setter Property="HeightRequest" Value="100" />
+                <Setter Property="WidthRequest" Value="100" />
+                <Setter Property="Aspect" Value="AspectFill" />
+                <Setter Property="Margin" Value="20,20,20,0" />
+            </Style>
+
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#E91E63" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontSize" Value="18" />
+                <Setter Property="Margin" Value="20,20,20,0" />
+                <Setter Property="Padding" Value="10" />
+                <Setter Property="BorderRadius" Value="5" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Lista" Clicked="lista" />
+        <ToolbarItem Text="Galeria" Clicked="galeria" />
+        <ToolbarItem Text="Mapa" Clicked="mapa" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Image x:Name="Foto" WidthRequest="200" HeightRequest="200"/>
+            <Button x:Name="tomarfoto" Text="Agregar Imagen" Clicked="tomarFoto" />
+            <Entry x:Name="Latitud" Placeholder="Latitud" MaxLength="100" IsEnabled="False"/>
+            <Entry x:Name="Longitud" Placeholder="Longitud" MaxLength="100" IsEnabled="False"/>
+            <Entry x:Name="Descripcion" Placeholder="Descripcion" MaxLength="200" />
+            <Button x:Name="btnguardar" Text="Guardar Ubicacion" Clicked="guardar" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

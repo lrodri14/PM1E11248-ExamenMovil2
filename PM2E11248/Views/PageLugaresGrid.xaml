@@ -1,0 +1,78 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E11248.Views.PageLugaresGrid"
+             xmlns:conver="clr-namespace:PM2E11248.Controllers">
+
+    <ContentPage.Resources>
+        <conver:ByteArrayImage x:Key="ByteArray" />
+
+        <Style TargetType="Grid" x:Key="GridStyle">
+            <Setter Property="BackgroundColor" Value="#ECECEC" />
+            <Setter Property="Margin" Value="10" />
+            <Setter Property="Padding" Value="10" />
+        </Style>
+
+        <Style TargetType="Label" x:Key="LabelStyle">
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="Margin" Value="5, 0" />
+            <Setter Property="TextColor" Value="#333333" />
+            <Setter Property="FontAttributes" Value="Bold" />
+        </Style>
+
+        <Style TargetType="Image" x:Key="ImageStyle">
+            <Setter Property="Aspect" Value="AspectFill" />
+            <Setter Property="HeightRequest" Value="120" />
+        </Style>
+    </ContentPage.Resources>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Agregar" Clicked="agregar" />
+        <ToolbarItem Text="Lista" Clicked="lista" />
+    </ContentPage.ToolbarItems>
+
+
+    <ContentPage.Content>
+        <CollectionView x:Name="listalugares">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Style="{StaticResource GridStyle}">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <Image Grid.Column="0" 
+                               x:Name="imagen"
+                               Source="{Binding Foto, Converter={StaticResource ByteArray}}"
+                               Style="{StaticResource ImageStyle}" />
+
+                        <StackLayout Grid.Column="1">
+
+                            <Label Text="Lugar:" 
+                                   Style="{StaticResource LabelStyle}" />
+
+                            <Label Text="{Binding Descripcion}" 
+                                   Style="{StaticResource LabelStyle}" />
+
+                            <Label Text="Latitude:" 
+                                   Style="{StaticResource LabelStyle}" />
+
+                            <Label Text="{Binding Latitud}" 
+                                   Style="{StaticResource LabelStyle}" />
+
+                            <Label Text="Longitude:" 
+                                   Style="{StaticResource LabelStyle}" />
+
+                            <Label Text="{Binding Longitud}" 
+                                   Style="{StaticResource LabelStyle}" />
+                        </StackLayout>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </ContentPage.Content>
+</ContentPage>

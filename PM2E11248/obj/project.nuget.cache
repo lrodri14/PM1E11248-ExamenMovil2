@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "dgSpecHash": "sBvRm7z0JRV7KKpd/l2KtRPVRhezNBFO3qLYHHmkVNu540rTZ8DQF4tB9Gh69pZThxLgFCY7VbeAON1DDogIng==",
+  "success": true,
+  "projectFilePath": "/Users/lrodri14/Projects/PM2E11248/PM2E11248/PM2E11248.csproj",
+  "expectedPackageFiles": [
+    "/Users/lrodri14/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/lrodri14/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
+    "/Users/lrodri14/.nuget/packages/sqlite-net-pcl/1.8.116/sqlite-net-pcl.1.8.116.nupkg.sha512",
+    "/Users/lrodri14/.nuget/packages/sqlitepclraw.bundle_green/2.0.4/sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",
+    "/Users/lrodri14/.nuget/packages/sqlitepclraw.core/2.0.4/sqlitepclraw.core.2.0.4.nupkg.sha512",
+    "/Users/lrodri14/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.0.4/sqlitepclraw.lib.e_sqlite3.2.0.4.nupkg.sha512",
+    "/Users/lrodri14/.nuget/packages/sqlitepclraw.provider.e_sqlite3/2.0.4/sqlitepclraw.provider.e_sqlite3.2.0.4.nupkg.sha512",
+    "/Users/lrodri14/.nuget/packages/system.buffers/4.4.0/system.buffers.4.4.0.nupkg.sha512",
+    "/Users/lrodri14/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
+    "/Users/lrodri14/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/lrodri14/.nuget/packages/system.runtime.compilerservices.unsafe/4.5.2/system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "/Users/lrodri14/.nuget/packages/xam.plugin.geolocator/4.5.0.6/xam.plugin.geolocator.4.5.0.6.nupkg.sha512",
+    "/Users/lrodri14/.nuget/packages/xam.plugin.media/5.0.1/xam.plugin.media.5.0.1.nupkg.sha512",
+    "/Users/lrodri14/.nuget/packages/xamarin.essentials/1.6.1/xamarin.essentials.1.6.1.nupkg.sha512",
+    "/Users/lrodri14/.nuget/packages/xamarin.forms/5.0.0.2012/xamarin.forms.5.0.0.2012.nupkg.sha512",
+    "/Users/lrodri14/.nuget/packages/xamarin.forms.maps/5.0.0.2012/xamarin.forms.maps.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}
